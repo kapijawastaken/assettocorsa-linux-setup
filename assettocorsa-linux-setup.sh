@@ -131,7 +131,7 @@ for package in "${required_packages[@]}"; do
   bin="$(basename "$package")"
   if [[ "$bin" == "glib2" ]] || [[ "$bin" == "glib" ]]; then
     bin="gio"
-  elif [[ "$bin" == "infozip"]]; then
+  elif [[ "$bin" == "infozip" ]]; then
     bin="unzip"
   fi
   if ! get-exec "$bin" > /dev/null; then
